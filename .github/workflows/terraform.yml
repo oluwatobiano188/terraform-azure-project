@@ -30,6 +30,9 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      - name: Terraform Import
+        run: terraform import azurerm_resource_group.rg /subscriptions/408e6f5b-df9f-4293-ae9f-672092237d72/resourceGroups/devopsdemo-rg
+
       - name: Terraform Plan
         run: terraform plan
 
